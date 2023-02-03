@@ -64,7 +64,14 @@ img {
     opacity: 1 !important;
 }
 
-/*NAVIGATION*/
+
+
+
+
+
+
+
+/*Header nav*/
 .main-nav-bar {
     width: 100%;
     height: 83px;
@@ -148,6 +155,13 @@ img {
     display: none;
 }
 
+
+
+
+
+
+
+
 /*Side Nav*/
 .container-side-nav-bkgrd {
     width: 100%;
@@ -204,6 +218,103 @@ img {
     height: 100%;
     overflow: hidden;
 }
+
+
+
+
+
+
+
+
+
+
+
+/*Footer styling*/
+.container-footer-menu {
+    border-bottom: 1px solid lightgray;
+}
+
+.container-footer-dropdown {
+    padding: 2rem 1.5rem;
+    display: block;
+}
+
+.wrapper-footer-dropdown-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-footer-dropdown-text:hover {
+    cursor: pointer;
+}
+
+.container-footer-dropdown h2 {
+    font-size: 1.2rem;
+}
+
+.wrapper-footer-dropdown-items ul li {
+    padding: 1rem 0;
+    font-size: .9rem;
+    color: rgb(131, 130, 130);
+}
+
+.wrapper-footer-dropdown-items ul li:hover {
+    color: black;
+}
+
+.wrapper-footer-dropdown-items ul li:first-child {
+    margin-top: 2rem;
+}
+
+.container-sm {
+    padding: 2rem 1.5rem;
+    font-size: 2.4rem;
+}
+
+.container-legal {
+    display: block;
+}
+
+.container-legal ul {
+    
+}
+
+.container-legal ul li {
+    font-size: .9rem;
+    padding: .8rem 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+/*Personal disclaimer styling*/
+.container-personal-disclaimer {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+}
+
+.container-personal-disclaimer p {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*RESPONSIVE*/
 @media (min-width: 768px) {
