@@ -16,6 +16,7 @@ body {
     line-height: 1.5;
     letter-spacing: -.01em;
     font-feature-settings: "calt";
+    transition: all 3s smooth;
 }
 
 a:hover {
@@ -43,6 +44,24 @@ img {
 
 .stndrdBtn:hover {
     background-color: rgba(0,0,0,.1);
+}
+
+.transition {
+    transition: width 3s smooth;
+    transition: opacity 3s ease-in-out;
+    transition: all 3s;
+}
+
+.hidden {
+    display: none !important;
+    width: 0 !important;
+    opacity: 0 !important;
+}
+
+.show {
+    display: absolute !important;
+    width: calc(100% * (12/12));
+    opacity: 1 !important;
 }
 
 /*NAVIGATION*/
@@ -130,68 +149,55 @@ img {
 }
 
 /*Side Nav*/
-.nav-side-open {
-    
-}
-
-#menuBkgrd {
+.container-side-nav-bkgrd {
     width: 100%;
-    background-color: rgba(17, 17, 17, .38);
-    z-index: 900;
+    position: absolute;
     top: 83px !important;
-    height: calc(100% - 83px) !important;
-    position: absolute;
+    height: calc(100% - 83px);
+    bottom: 0;
+    z-index: 900;
+    background-color: rgba(0,0,0,.38);
 }
 
-#unList {
-    margin-top: 3rem !important;
-    width: 100%;
-}
-
-#menuContainer {
-    left: 20vw;
-    right: 0;
+.container-side-nav-menu {
     width: 80vw;
-    background-color: white;
-    z-index: 1000;
-    opacity: 1;
-    height: 100%;
     position: absolute;
+    right: 0;
+    left: 20vw;
+    background-color: var(--white);
+    height: 100%;
 }
 
-.nav-side-item {
+.wrapper-side-nav-link {
+    margin: 2.8rem 1.5rem;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.wrapper-side-nav-link ul {
     width: 100%;
-    padding: 1.6rem 3.2rem !important;
-    font-size: 1.6rem;
 }
 
-#actionContainer {
-    margin-top: 1.6rem;
-    margin-left: 3.2rem;
+.wrapper-side-nav-link ul li {
+    font-size: 1.2rem;
+    padding: 1rem 0;
 }
 
-#loginContainer {
+.wrapper-side-nav-submenu {
     display: flex;
-    gap: 10px;
-}
-
-#navContainer {
-    border-bottom: 1px solid rgb(197, 195, 195);
-}
-
-#locatorContainer {
-    margin-top: 1.6rem;
+    justify-content: space-between;
     align-items: center;
-    margin-right: 0 !important;
 }
 
-#locatorRef {
-    align-self: center;
+.wrapper-side-nav-submenu:hover {
+    cursor: pointer;
 }
 
-#locatorLink {
-    display: flex;
-    gap: 10px;
+.container-side-nav-actions {
+    margin-left: 1.5rem;
+}
+
+.wrapper-login-signup {
+    padding-bottom: 1rem;
 }
 
 .prevent-scroll {
