@@ -1,0 +1,222 @@
+/*GENERAL ALL PAGE STYLING*/
+:root {
+    --lightGreen: #d4e9e2;
+    --darkGreen: #1e3932;
+    --Green: #00754a;
+    --maroon: #8b323e;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body {
+    color: rgba(0,0,0,.87);
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    letter-spacing: -.01em;
+    font-feature-settings: "calt";
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.stndrdBtn {
+    min-width: 33px;
+    min-height: 33px;
+    border: solid 1px var(--darkGreen);
+    border-radius: 50px;
+    padding: 7px 16px;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.2;
+    transition: all .2s ease;
+}
+
+.stndrdBtn:hover {
+    background-color: rgba(0,0,0,.1);
+}
+
+/*NAVIGATION*/
+.main-nav-bar {
+    width: 100%;
+    height: 83px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(214, 211, 211);
+    z-index: 1000;
+}
+
+.main-nav-bar div {
+    align-items: center;
+    gap: 10px;
+}
+
+.sbLogo {
+    background-image: url(../images/starbucksLogo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 38px;
+    margin-left: 1.6rem;
+}
+
+.side-menu-btn {
+    width: 24px;
+    height: 24px;
+    margin-right: 1.6rem;
+}
+
+.side-menu-btn:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+.side-menu-btn i {
+    width: 24px;
+    height: 24px;
+    color: rgb(77, 76, 76);
+}
+
+.main-nav-bar nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.main-nav-bar nav ul li {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 1rem;
+}
+
+.main-nav-bar nav ul li:hover, .container-find-store:hover {
+    color: var(--Green);
+}
+
+.container-find-store {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.container-auth {
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+
+#signupBtn {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+#signupBtn:hover {
+    background-color: #707070;
+}
+
+.main-nav-bar nav, .nav-right-container{
+    display: none;
+}
+
+/*Side Nav*/
+.nav-side-open {
+    
+}
+
+#menuBkgrd {
+    width: 100%;
+    background-color: rgba(17, 17, 17, .38);
+    z-index: 900;
+    top: 83px !important;
+    height: calc(100% - 83px) !important;
+    position: absolute;
+}
+
+#unList {
+    margin-top: 3rem !important;
+    width: 100%;
+}
+
+#menuContainer {
+    left: 20vw;
+    right: 0;
+    width: 80vw;
+    background-color: white;
+    z-index: 1000;
+    opacity: 1;
+    height: 100%;
+    position: absolute;
+}
+
+.nav-side-item {
+    width: 100%;
+    padding: 1.6rem 3.2rem !important;
+    font-size: 1.6rem;
+}
+
+#actionContainer {
+    margin-top: 1.6rem;
+    margin-left: 3.2rem;
+}
+
+#loginContainer {
+    display: flex;
+    gap: 10px;
+}
+
+#navContainer {
+    border-bottom: 1px solid rgb(197, 195, 195);
+}
+
+#locatorContainer {
+    margin-top: 1.6rem;
+    align-items: center;
+    margin-right: 0 !important;
+}
+
+#locatorRef {
+    align-self: center;
+}
+
+#locatorLink {
+    display: flex;
+    gap: 10px;
+}
+
+.prevent-scroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+/*RESPONSIVE*/
+@media (min-width: 768px) {
+    .sbLogo {
+        width: 49px;
+        height: 49px;
+    }
+}
+
+@media (min-width: 772px) {
+    .side-menu-btn {
+        display: none !important;
+    }
+
+    .main-nav-bar {
+        justify-content: space-between;
+    }
+
+    .main-nav-bar div, .main-nav-bar nav {
+        display: flex;
+    }
+}
