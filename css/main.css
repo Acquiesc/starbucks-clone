@@ -17,6 +17,8 @@ body {
     letter-spacing: -.01em;
     font-feature-settings: "calt";
     transition: all 3s;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 a:hover {
