@@ -42,27 +42,25 @@
             </div>
         </header>
 
-        <nav class = "hidden transition" id = "sideMenu">
-            <div class = "container-side-nav-bkgrd">
-                <div class = "container-side-nav-menu">
-                    <div class = "wrapper-side-nav-link">
-                        <ul>
-                            <div class = "wrapper-side-nav-submenu">
-                                <li>Menu</li>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </div>
-                            <a href="#"><li>Rewards</li></a>
-                            <a href="#"><li>Gift Cards</li></a>
-                        </ul>
+        <nav class = "container-right-nav">
+            <div class = "container-right-nav-menu">
+                <div class = "wrapper-side-nav-link">
+                    <ul>
+                        <div class = "wrapper-side-nav-submenu">
+                            <li>Menu</li>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <a href="#"><li>Rewards</li></a>
+                        <a href="#"><li>Gift Cards</li></a>
+                    </ul>
+                </div>
+                <div class = "container-side-nav-actions">
+                    <div class = "wrapper-login-signup">
+                        <a href = "#" class = "stndrdBtn">Sign in</a>
+                        <a href = "#" class = "stndrdBtn" id = "signupBtn">Join now</a>
                     </div>
-                    <div class = "container-side-nav-actions">
-                        <div class = "wrapper-login-signup">
-                            <a href = "#" class = "stndrdBtn">Sign in</a>
-                            <a href = "#" class = "stndrdBtn" id = "signupBtn">Join now</a>
-                        </div>
-                        <div class = "container-find-store">
-                            <a><i class="fa-solid fa-location-dot"></i>  Find a store</a>
-                        </div>
+                    <div class = "container-find-store">
+                        <a><i class="fa-solid fa-location-dot"></i>  Find a store</a>
                     </div>
                 </div>
             </div>
@@ -127,7 +125,7 @@
                         <h2>About Us</h2>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <div class = "wrapper-footer-dropdown-items hidden">
+                    <div class = "wrapper-footer-dropdown-items hidden-dropdown">
                         <ul>
                             <a href=""><li>Our Company</li></a>
                             <a href=""><li>Our Coffee</li></a>
@@ -143,7 +141,7 @@
                         <h2>Careers</h2>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <div class = "wrapper-footer-dropdown-items hidden transition">
+                    <div class = "wrapper-footer-dropdown-items hidden-dropdown">
                         <ul>
                             <a href=""><li>Culture and Values</li></a>
                             <a href=""><li>Inclusion, Diversity, and Equity</li></a>
@@ -159,7 +157,7 @@
                         <h2>Social Impact</h2>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <div class = "wrapper-footer-dropdown-items hidden transition">
+                    <div class = "wrapper-footer-dropdown-items-small hidden-dropdown">
                         <ul>
                             <a href=""><li>People</li></a>
                             <a href=""><li>Planet</li></a>
@@ -172,7 +170,7 @@
                         <h2>For Business Partners</h2>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <div class = "wrapper-footer-dropdown-items hidden transition">
+                    <div class = "wrapper-footer-dropdown-items-small hidden-dropdown">
                         <ul>
                             <a href=""><li>Landlord Support Center</li></a>
                             <a href=""><li>Suppliers</li></a>
@@ -186,7 +184,7 @@
                         <h2>Order and Pickup</h2>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <div class = "wrapper-footer-dropdown-items hidden transition">
+                    <div class = "wrapper-footer-dropdown-items hidden-dropdown">
                         <ul>
                             <a href=""><li>Order on the App</li></a>
                             <a href=""><li>Order on the Web</li></a>
@@ -206,13 +204,11 @@
                 <i class="fa-brands fa-square-twitter"></i>
             </div>
             <div class = "container-legal">
-                <ul>
                     <a href = "#"><li>Privacy Notice</li></a>
                     <a href = "#"><li>Terms of Use</li></a>
                     <a href = "#"><li>Do Not Share My Personal Information</li></a>
                     <a href = "#"><li>CA Supply Chain Act</li></a>
                     <a href = "#"><li>Cookie Preferences</li></a>
-                </ul>
             </div>
             <div class = "container-personal-disclaimer">
                 <p>DISCLAIMER: This website is in no way affiliated with Starbucks</p>

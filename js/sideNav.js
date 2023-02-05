@@ -1,52 +1,40 @@
 const btn = document.getElementById('sideNav');
 btn.addEventListener('click', toggleMenu);
 
-const menu = document.querySelector("#sideMenu");
+const bkgrd = document.querySelector(".container-right-nav");
+const menu = document.querySelector(".container-right-nav-menu");
 
 function toggleMenu() {
-    if(menu.classList.contains("hidden")) {
-        openMenu();
-        console.log("Opening menu");
+    bkgrd.classList.toggle("active-background");
+    menu.classList.toggle("active-menu");
+
+    if(bkgrd.classList.contains("active-background")) {
+        //update to close icon
+        btn.querySelector("i").remove();
+
+        var icon = document.createElement("i");
+        icon.classList.add("fa-solid");
+        icon.classList.add("fa-xmark");
+        btn.appendChild(icon);
+
+        //prevent page scrolling
+        document.body.setAttribute("class", "prevent-scroll");
+        console.log("Menu active");
     } else {
-        closeMenu();
-        console.log("closing menu");
+        //update to open icon
+        btn.querySelector("i").remove();
+
+        let icon = document.createElement("i");
+        icon.classList.add("fa-solid");
+        icon.classList.add("fa-bars");
+        btn.appendChild(icon);
+
+        //allow scrolling
+        document.body.removeAttribute("class", "prevent-scroll");
+        console.log("Menu not active");
     }
 
 }
-
-function openMenu() {
-    //display menu
-    menu.classList.add("show");
-    menu.classList.remove("hidden");
-
-    //update to close icon
-    btn.querySelector("i").remove();
-
-    var icon = document.createElement("i");
-    icon.classList.add("fa-solid");
-    icon.classList.add("fa-xmark");
-    btn.appendChild(icon);
-
-    document.body.setAttribute("class", "prevent-scroll");
-}
-
-function closeMenu() {
-    //close menu
-    menu.classList.add("hidden");
-    menu.classList.remove("show");
-
-    //update to open icon
-    btn.querySelector("i").remove();
-
-    let icon = document.createElement("i");
-    icon.classList.add("fa-solid");
-    icon.classList.add("fa-bars");
-    btn.appendChild(icon);
-
-    //allow scrolling
-    document.body.removeAttribute("class", "prevent-scroll");
-}
-
 
 
 

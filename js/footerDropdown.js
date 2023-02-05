@@ -1,13 +1,13 @@
 function toggleDropdown(dropContainer) {
     let dropdown = dropContainer.querySelector(".wrapper-footer-dropdown-items");
+    let dropdownSmall = dropContainer.querySelector(".wrapper-footer-dropdown-items-small");
     
-    if(dropdown.classList.contains("hidden")) {
-        dropdown.classList.remove("hidden");
-        dropdown.classList.add("show");
-        console.log("Opened dropdown");
-    } else {
-        dropdown.classList.add("hidden");
-        dropdown.classList.remove("show");
-        console.log("Closed dropdown");
+    if(dropdown) {
+        dropdown.classList.toggle("hidden-dropdown");
+        console.log("Toggled dropdown normal");
+    } else if (dropdownSmall) {
+        dropdownSmall.classList.toggle("hidden-dropdown");
+        console.log("Toggled dropdown small");
     }
+    
 }
