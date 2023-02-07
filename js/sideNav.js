@@ -1,5 +1,12 @@
-const btn = document.getElementById('sideNav');
-btn.addEventListener('click', toggleMenu);
+const mainBtn = document.getElementById('sideNav');
+mainBtn.addEventListener('click', toggleMenu);
+
+const subBtns = document.querySelectorAll('.wrapper-side-nav-submenu');
+for(var i = 0; i < subBtns.length; i++)
+{
+    subBtns[i].addEventListener('click', toggleSubMenu);
+}
+
 
 const bkgrd = document.querySelector(".container-right-nav");
 const menu = document.querySelector(".container-right-nav-menu");
@@ -10,30 +17,35 @@ function toggleMenu() {
 
     if(bkgrd.classList.contains("active-background")) {
         //update to close icon
-        btn.querySelector("i").remove();
+        mainBtn.querySelector("i").remove();
 
         var icon = document.createElement("i");
         icon.classList.add("fa-solid");
         icon.classList.add("fa-xmark");
-        btn.appendChild(icon);
+        mainBtn.appendChild(icon);
 
         //prevent page scrolling
         document.body.setAttribute("class", "prevent-scroll");
         console.log("Menu active");
     } else {
         //update to open icon
-        btn.querySelector("i").remove();
+        mainBtn.querySelector("i").remove();
 
         let icon = document.createElement("i");
         icon.classList.add("fa-solid");
         icon.classList.add("fa-bars");
-        btn.appendChild(icon);
+        mainBtn.appendChild(icon);
 
         //allow scrolling
         document.body.removeAttribute("class", "prevent-scroll");
         console.log("Menu not active");
     }
 
+}
+
+function toggleSubMenu() {
+    document.querySelector(".container-right-nav-submenu").classList.toggle("active-menu");
+    console.log("Toggled sub menu");
 }
 
 
