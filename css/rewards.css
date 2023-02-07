@@ -1,0 +1,447 @@
+/*General reward styling*/
+
+
+
+/*Banner*/
+.container-banner {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    color: white !important;
+    justify-content: space-evenly;
+    background-color: var(--darkGreen);
+    align-items: center;
+    font-weight: 700;
+    font-size: .9rem !important;
+    padding: .5rem 1rem;
+    z-index: 500;
+}
+
+.container-banner h1, .container-banner a {
+    max-width: 50%
+}
+
+.container-banner a {
+    border-color: white !important;
+    justify-self: center;
+    font-size: .9rem !important;
+}
+
+
+
+
+
+
+/*join rewards*/
+.container-join-rewards {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+    background-color: var(--lightGreen);
+}
+
+.container-join-rewards h2 {
+    color: var(--darkGreen);
+    font-size: 1.2rem;
+    line-height: 1.75;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.container-join-rewards p {
+    color: var(--darkGreen);
+    font-size: 1.1rem;
+    line-height: 1.75;
+    padding-bottom: 1.2rem;
+}
+
+.container-join-rewards a {
+    text-decoration: underline 1px solid var(--darkGreen);
+    font-size: 1rem;
+}
+
+#joinApp {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: .5rem 1rem;
+    background-color: var(--green);
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+
+/*Get started sub banner*/
+.container-reward-ad {
+    padding: 3rem 1rem 2rem 1rem;
+    text-align: center;
+}
+
+.container-reward-ad h2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.container-reward-ad p {
+    font-size: .9rem;
+    font-weight: 515;
+}
+
+
+
+
+
+
+
+
+
+/*Getting started instructions*/
+.container-get-started {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    padding: 0 1rem;
+}
+
+.container-get-started div {
+    padding: 2rem 0;
+}
+
+.container-get-started div img {
+    max-height: 50px;
+}
+
+.wrapper-get-started-text h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.wrapper-get-started-text p {
+    font-size: 1rem;
+    color: rgb(44, 43, 43);
+    font-weight: 500;
+}
+
+.wrapper-get-started-text p a, .green-link-text {
+    color: var(--green);
+    text-decoration: underline 1px solid var(--green);
+}
+
+.wrapper-get-started-text p a:hover, .green-link-text:hover {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/*Display menu*/
+.container-reward-display-menu {
+    text-align: center;
+    font-weight: 700;
+    padding-top: 2rem;
+    background-color: var(--antiqueWhite);
+}
+
+.container-reward-display-menu h2 {
+    padding: 2rem;
+}
+
+.wrapper-reward-display-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wrapper-reward-display-buttons button { 
+    height: auto;
+    width: 20vw;
+    padding-bottom: 1.5rem;
+}
+
+.wrapper-reward-display-buttons button i { 
+    font-size: .5rem;
+    color: goldenrod;
+}
+
+.wrapper-reward-display-buttons button:hover {
+    cursor: pointer;
+}
+
+.active-display-btn {
+    border-bottom: 6px solid var(--green);
+}
+
+
+/*Displays*/
+.container-reward-display {
+    background-color: var(--lightGreen);
+    text-align: center;
+    padding: 3rem 1rem;
+    min-height: 60vh;
+}
+
+.container-reward-display div {
+    opacity: 0;
+    transition: all .5s;
+    padding-right: 1rem;
+}
+
+.wrapper-reward-display-text {
+    padding-top: 2rem;
+}
+
+.wrapper-reward-display-text h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.wrapper-reward-display-text p {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.active-display, .active-display div {
+    
+    opacity: 1 !important;
+}
+
+#display1 {
+    z-index: 50;
+    position: absolute;
+}
+
+#display2 {
+    z-index: 60;
+    position: absolute;
+}
+
+#display3 {
+    z-index: 70;
+    position: absolute;
+}
+
+#display4 {
+    z-index: 80;
+    position: absolute;
+}
+
+#display5 {
+    z-index: 90;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+/*Reward benefits*/
+.container-reward-benefits {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    padding: 0 1rem;
+}
+
+.container-reward-benefits div {
+    padding: 1rem;
+}
+
+.container-reward-benefits div h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.container-reward-benefits div p {
+    font-size: 1rem;
+    padding: 1.2rem 0;
+}
+
+.container-reward-benefits div a {
+    font-size: 1rem;
+}
+
+
+
+
+
+/*Earn Rewards*/
+.container-earn-rewards {
+    background-color: var(--antiqueWhite);
+}
+
+.earn-reward-header {
+    padding: 2rem 1rem 0 1rem;
+}
+
+.earn-reward-header h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.earn-reward-header h3 i {
+    font-size: .7rem;
+}
+
+.earn-reward-header p {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+
+
+
+/*Pay as you go*/
+.container-pay-go {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 25vh 25vh;
+    grid-auto-flow: column;
+    column-gap: 1rem;
+    row-gap: 1.5rem;
+    padding: 1.5rem 1.5rem 3rem 0;
+}
+
+.first-container-pay-go {
+    border-bottom: 1px solid lightgray;
+}
+
+.container-pay-go div img {
+    width: 100%;
+    height: auto;
+}
+
+.container-pay-go div h3 {
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+
+.container-pay-go div p {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+
+
+
+
+
+
+/*Star Codes*/
+.container-star-codes {
+    padding: 6rem 1.5rem;
+}
+
+.container-star-codes h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.container-star-codes p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container-star-codes p span {
+    color: var(--green);
+}
+
+/*Star Codes form*/
+input[type=text] {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+}
+
+::placeholder {
+    color: black;
+    padding: 1rem;
+    font-size: 1rem;
+    opacity: 1;
+}
+
+button[type=submit] {
+    border: 1px solid black;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .3rem 1rem;
+    border-radius: 25px;
+    margin-top: 1.5rem;
+    width: fit-content;
+    margin-left: auto !important;
+    transition: background-color .2s ease-in-out;
+}
+
+button[type=submit]:hover {
+    cursor: pointer;
+    background-color: rgba(226, 223, 223, .6);
+}
+
+.container-star-codes form {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*FAQ*/
+.container-faq {
+    padding: 0 1.5rem 4rem 1rem;
+}
+
+.container-faq h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.container-faq p {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+
+
+
+
+
+/*Terms of Use*/
+.container-tou {
+    background-color: var(--antiqueWhite);
+    padding: 3rem 1rem;
+    border-bottom: 1px solid rgb(212, 211, 211);
+}
+
+.wrapper-tou h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    color: rgb(102, 102, 102);
+}
+
+.wrapper-tou p {
+    font-size: .9rem;
+    padding: .6rem 0;
+}

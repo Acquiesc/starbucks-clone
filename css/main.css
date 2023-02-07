@@ -1,8 +1,9 @@
 /*GENERAL ALL PAGE STYLING*/
 :root {
+    --antiqueWhite: #f9f9f9;
     --lightGreen: #d4e9e2;
     --darkGreen: #1e3932;
-    --Green: #00754a;
+    --green: #00754a;
     --maroon: #8b323e;
     --white: #ffffff;
     --black: #000000;
@@ -204,7 +205,7 @@ img {
 #subMenu {
     justify-content: left;
     text-align: left;
-    background-color: #f9f9f9;
+    background-color: var(--antiqueWhite);
 }
 
 #subMenu i {
