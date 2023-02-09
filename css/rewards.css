@@ -35,8 +35,7 @@
 /*join rewards*/
 .container-join-rewards {
     text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 15rem;
+    padding: 5rem 2rem 15rem 2rem;
     background-color: var(--lightGreen);
 }
 
@@ -45,17 +44,20 @@
     font-size: 1.2rem;
     line-height: 1.75;
     font-weight: 700;
-    padding-bottom: 1rem;
 }
 
 .container-join-rewards p {
     color: var(--darkGreen);
     font-size: 1.1rem;
     line-height: 1.75;
-    padding-bottom: 1.2rem;
+    padding: 1rem 0;
 }
 
-.container-join-rewards a {
+.container-join-rewards div {
+    padding-top: 1.2rem;
+}
+
+.container-join-rewards  div a {
     text-decoration: underline 1px solid var(--darkGreen);
     font-size: 1rem;
 }
@@ -103,10 +105,10 @@
 /*Getting started instructions*/
 .container-get-started {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: auto auto;
     grid-template-rows: 1fr 1fr 1fr;
     grid-auto-flow: column;
-    padding: 0 1rem;
+    padding: 1rem;
 }
 
 .container-get-started div {
@@ -115,6 +117,7 @@
 
 .container-get-started div img {
     max-height: 50px;
+    padding-right: 1rem;
 }
 
 .wrapper-get-started-text h3 {
@@ -126,6 +129,7 @@
     font-size: 1rem;
     color: rgb(44, 43, 43);
     font-weight: 500;
+    padding-top: 1rem;
 }
 
 .wrapper-get-started-text p a, .green-link-text {
@@ -184,15 +188,32 @@
 .container-reward-display {
     background-color: var(--lightGreen);
     text-align: center;
-    padding: 3rem 1rem;
-    min-height: 60vh;
+    padding: 3rem 0;
+    height: 70vh;
+    position: relative;
 }
 
 .container-reward-display div {
     opacity: 0;
     transition: all .5s;
-    padding-right: 1rem;
+    height: fit-content;
+    width: 100%;
 }
+
+.wrapper-reward-display {
+    display: grid !important;
+    grid-template-columns: 80vw;
+    grid-template-rows: auto auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.wrapper-reward-display div {
+    height: auto;
+    width: auto;
+}
+
+
 
 .wrapper-reward-display-text {
     padding-top: 2rem;
@@ -248,7 +269,7 @@
 /*Reward benefits*/
 .container-reward-benefits {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: auto 80%;
     grid-template-rows: 1fr 1fr 1fr;
     grid-auto-flow: column;
     padding: 0 1rem;
@@ -270,6 +291,11 @@
 
 .container-reward-benefits div a {
     font-size: 1rem;
+}
+
+.container-reward-benefits div a img {
+    width: 100%;
+    float: right;
 }
 
 
@@ -305,12 +331,12 @@
 /*Pay as you go*/
 .container-pay-go {
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 25vh 25vh;
-    grid-auto-flow: column;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
     column-gap: 1rem;
-    row-gap: 1.5rem;
-    padding: 1.5rem 1.5rem 3rem 0;
+    row-gap: 6rem;
+    padding: 1.5rem 1.5rem 8rem 0;
 }
 
 .first-container-pay-go {
@@ -318,8 +344,9 @@
 }
 
 .container-pay-go div img {
-    width: 100%;
-    height: auto;
+    max-width: 60%;
+    max-height: 60%;
+    float: right;
 }
 
 .container-pay-go div h3 {
@@ -423,14 +450,22 @@ button[type=submit]:hover {
 }
 
 
+/*Terms of Use Disclaimer*/
+.wrapper-tou-disclaimer {
+    width: 100%;
+    background-color: var(--antiqueWhite);
+    padding-left: 1.5rem;
+    padding-top: 2rem;
+}
+
+
 
 
 
 /*Terms of Use*/
 .container-tou {
     background-color: var(--antiqueWhite);
-    padding: 3rem 1rem;
-    border-bottom: 1px solid rgb(212, 211, 211);
+    padding: 1rem 1rem 3rem 1rem;
 }
 
 .wrapper-tou h4 {
@@ -444,4 +479,293 @@ button[type=submit]:hover {
 .wrapper-tou p {
     font-size: .9rem;
     padding: .6rem 0;
+}
+
+
+
+/*Split content*/
+.split-content {
+    width: 100%;
+    height: 5vh;
+    background-color: white;
+    border-bottom: 1px solid rgb(212, 211, 211);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsive Styling*/
+@media (min-width: 768px) {
+    /*Join rewards*/
+    .container-join-rewards {
+        text-align: left;
+        padding: 5rem 2rem 3rem 2rem;
+    }
+
+    .container-join-rewards h2 {
+        font-size: 2rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /*Get started sub banner*/
+    .container-reward-ad {
+        padding: 10rem 1rem 3rem 1rem;
+        text-align: center;
+    }
+
+    .container-reward-ad h2 {
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+
+    .container-reward-ad p {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*get started instructions*/
+    .container-get-started, .container-reward-benefits {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        padding: 0 1.5rem 10rem 1.5rem
+    }
+
+    .container-get-started div {
+        padding: 0 1rem;
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    
+    .container-get-started div img {
+        margin: auto;
+    }
+
+    .wrapper-get-started-text {
+        display: block !important;
+        text-align: center;
+    }
+
+    .wrapper-get-started-text h3 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    .wrapper-get-started-text p {
+        font-size: .9rem;
+    }
+
+
+    /*Display buttons*/
+    .wrapper-reward-display-buttons {
+        width: 80vw;
+        margin: auto;
+    }
+
+    .container-reward-display-menu h2 {
+        padding: 2.5rem;
+        font-size: 1.8rem;
+    }
+    
+    .wrapper-reward-display-buttons button {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+
+
+
+
+
+
+
+
+
+    /*Reward displays*/
+    .container-reward-display {
+        background-color: var(--lightGreen);
+        text-align: left;
+        padding: 3rem 1rem;
+        height: 30vh;
+        position: relative;
+    }
+    
+    .container-reward-display div {
+        opacity: 0;
+        transition: all .5s;
+        display: flex;
+    }
+
+    .wrapper-reward-display-text {
+        display: block !important;
+        padding-top: 2rem;
+    }
+    
+    .wrapper-reward-display-text h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+    .wrapper-reward-display-text p {
+        font-weight: 500;
+        font-size: .9rem;
+    }
+
+    .wrapper-reward-display {
+        width: 90vw;
+        height: 30vh;
+        display: grid !important;
+        grid-template-columns: auto auto;
+    }
+
+
+
+
+
+
+    /*reward ad*/
+    .container-earn-rewards .container-reward-ad {
+        padding-top: 1.5rem !important;
+    }
+
+    .container-reward-ad div {
+        width: 60vw;
+        margin: auto;
+    }
+
+    .container-reward-ad div p {
+        font-weight: 400;
+    }
+
+
+
+    /*reward benefits*/
+    .container-reward-benefits {
+        /*container grid matched with get started instructions*/
+        text-align: center;
+    }
+
+    .container-reward-benefits div a img {
+        height: auto;
+        width: 60%;
+        padding-right: 1rem;
+        float: none;
+        margin: auto;
+      }
+
+    .container-reward-benefits div h3 {
+        font-size: 1rem;
+    }
+
+
+    /*Pay-go headers*/
+    .earn-reward-header h3 {
+        font-size: 1.7rem;
+    }
+
+    .earn-reward-header p {
+        font-size: 1rem;
+    }
+
+    /*Pay go grids*/
+    .container-pay-go {
+        grid-template-columns: 10vw 30vw 10vw 30vw;
+        grid-template-rows: auto;
+        column-gap: 1rem;
+        padding: 1.5rem 0 3rem 0;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .container-pay-go div img {
+        max-height: 60%;
+        max-width: 100%;
+        min-width: 60%;
+        float: right;
+    }
+
+
+
+
+
+
+
+
+
+
+    /*Star codes, FAQ*/
+    .container-star-codes, .container-faq {
+        width: 60vw;
+        margin: auto;
+    }
+
+
+
+    .container-tou {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.5rem;
+    }
+
+    .container-tou div {
+        padding: 0 1rem;
+    }
+
+
+
+
+    
+
 }
