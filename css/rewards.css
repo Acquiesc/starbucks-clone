@@ -769,3 +769,20 @@ button[type=submit]:hover {
     
 
 }
+
+
+@media (min-width: 1024px) {
+    .pay-go-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 3rem 1rem;
+    }
+
+    .container-pay-go {
+        margin: 0;
+    }
+
+    .earn-reward-header {
+        padding-right: 0;
+    }
+}

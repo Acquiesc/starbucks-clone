@@ -122,7 +122,7 @@ img {
 }
 
 .main-nav-bar nav ul li:hover, .container-find-store:hover {
-    color: var(--Green);
+    color: var(--green) !important;
 }
 
 .container-find-store {
