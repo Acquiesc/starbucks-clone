@@ -11,6 +11,8 @@ for(var i = 0; i < subBtns.length; i++)
 const bkgrd = document.querySelector(".container-right-nav");
 const menu = document.querySelector(".container-right-nav-menu");
 
+const banner = document.querySelector(".container-banner");
+
 function toggleMenu() {
     bkgrd.classList.toggle("active-background");
     menu.classList.toggle("active-menu");
@@ -24,6 +26,11 @@ function toggleMenu() {
         icon.classList.add("fa-xmark");
         mainBtn.appendChild(icon);
 
+        //remove banner
+        if(banner) {
+            banner.style.display = "none";
+        }
+
         //prevent page scrolling
         document.body.setAttribute("class", "prevent-scroll");
         console.log("Menu active");
@@ -35,6 +42,11 @@ function toggleMenu() {
         icon.classList.add("fa-solid");
         icon.classList.add("fa-bars");
         mainBtn.appendChild(icon);
+
+        //display banner
+        if(banner) {
+            banner.style.display = "flex";
+        }
 
         //allow scrolling
         document.body.removeAttribute("class", "prevent-scroll");
