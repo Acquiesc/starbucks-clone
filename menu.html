@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/menu.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Starbucks Coffee Company</title>
+    </head>
+
+    <body>
+
+        <header class = "main-nav-bar">
+            <div class = "nav-left-container">
+                <a href="index.html"><div class = "sbLogo"></div></a>
+    
+                <nav>
+                    <ul>
+                        <li><a href = "menu.html" id="menuHeader">Menu</a></li>
+                        <li><a href = "rewards.html" id="rewardHeader">Rewards</a></li>
+                        <li><a href = "#" id="giftCardHeader">Gift Cards</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class = "nav-right-container">
+                <div class = "container-find-store">
+                    <a><i class="fa-solid fa-location-dot"></i>  Find a store</a>
+                </div>
+    
+                <div class = "container-auth">
+                    <a href = "#" class = "stndrdBtn">Sign in</a>
+                    <a href = "#" class = "stndrdBtn" id="signupBtn">Join now</a>
+                </div>
+            </div>
+
+            <div class = "side-menu-btn" id="sideNav">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+        <nav class = "container-right-nav">
+            <div class = "container-right-nav-menu">
+                <div class = "wrapper-side-nav-link">
+                    <ul>
+                        <div class = "wrapper-side-nav-submenu">
+                            <li>Menu</li>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <a href="rewards.html"><li>Rewards</li></a>
+                        <a href="#"><li>Gift Cards</li></a>
+                    </ul>
+                </div>
+                <div class = "container-side-nav-actions">
+                    <div class = "wrapper-login-signup">
+                        <a href = "#" class = "stndrdBtn">Sign in</a>
+                        <a href = "#" class = "stndrdBtn" id = "signupBtn">Join now</a>
+                    </div>
+                    <div class = "container-find-store">
+                        <a><i class="fa-solid fa-location-dot"></i>  Find a store</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "container-right-nav-submenu">
+                <div class = "wrapper-side-nav-sublink">
+                    <ul>
+                        <div class = "wrapper-side-nav-submenu" id="subMenu">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            <li>Menu</li>
+                        </div>
+                        <a href="#"><li>All products</li></a>
+                        <a href="#"><li>Featured</li></a>
+                        <a href="#"><li>Previous Orders</li></a>
+                        <a href="#"><li>Favorite Products</li></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <main>
+
+            <nav class = "container-menu-sub-nav">
+                <ul>
+                    <a href="" class="active-menu-nav"><li>All products</li></a>
+                    <a href="" class=""><li>Featured</li></a>
+                    <a href="" class=""><li>Previous Orders</li></a>
+                    <a href="" class=""><li>Favorite Products</li></a>
+                </ul>
+            </nav>
+
+            
+
+            <div class = "container-menu">
+                <nav class = "container-all-products-nav">
+                    <h2>Drinks</h2>
+                    <ul id = "leftNavItems">
+                        <li><a href="">Hot Coffees</a></li>
+                        <li><a href="">Hot Teas</a></li>
+                        <li><a href="">Hot Drinks</a></li>
+                        <li><a href="">Frappuccino Blended Beverages</a></li>
+                        <li><a href="">Cold Coffees</a></li>
+                        <li><a href="">Iced Teas</a></li>
+                        <li><a href="">Cold Drinks</a></li>
+                    </ul>
+
+                    <h2>Food</h2>
+                    <ul>
+                        <li><a href="">Hot Breakfast</a></li>
+                        <li><a href="">Bakery</a></li>
+                        <li><a href="">Lunch</a></li>
+                        <li><a href="">Snacks & Sweets</a></li>
+                        <li><a href="">Oatmeal & Yogurt</a></li>
+                    </ul>
+
+                    <h2>At Home Coffee</h2>
+                    <ul>
+                        <li><a href="">Whole Bean</a></li>
+                        <li><a href="">VIA Instant</a></li>
+                    </ul>
+
+                    <h2>Merchandise</h2>
+                    <ul>
+                        <li><a href="">Cold Cups</a></li>
+                        <li><a href="">Tumblers</a></li>
+                        <li><a href="">Mugs</a></li>
+                        <li><a href="">Water Bottles</a></li>
+                        <li><a href="">Other</a></li>
+                    </ul>
+
+                    <h2>Gift Cards</h2>
+                    <ul>
+                        <li><a href="">Happy Birthday</a></li>
+                        <li><a href="">Thank You</a></li>
+                        <li><a href="">Traditional</a></li>
+                    </ul>
+                </nav>
+    
+                <section class = "container-menu-display">
+                    <div class = "container-menu-header">
+                        <h1>Menu</h1>
+                    </div>
+                    <div class = "container-menu-section-header">
+                        <h2>Drinks</h2>
+                    </div>
+                    <div class = "wrapper-menu-grid">
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Hot Coffees</p></a>
+                        </div>
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Hot Teas</p></a>
+                        </div>
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Hot Drinks</p></a>
+                        </div>
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Frappuccino Blended Beverages</p></a>
+                        </div>
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Cold Coffees</p></a>
+                        </div>
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Iced teas</p></a>
+                        </div>
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Cold Drinks</p></a>
+                        </div>
+                    </div>
+                        
+                    <div class = "container-menu-section-header">
+                        <h2>Food</h2>
+                    </div>
+                    <div class = "wrapper-menu-grid">
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Hot Breakfast</p></a>
+                        </div>
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Bakery</p></a>
+                        </div>
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Lunch</p></a>
+                        </div>
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Snacks & Sweets</p></a>
+                        </div>
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Oatmeal & Yogurt</p></a>
+                        </div>
+                    </div>
+
+                    <div class = "container-menu-section-header">
+                        <h2>At Home Coffee</h2>
+                    </div>
+                    <div class = "wrapper-menu-grid">
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Whole Bean</p></a>
+                        </div>
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>VIA Instant</p></a>
+                        </div>
+                    </div>
+
+                    <div class = "container-menu-section-header">
+                        <h2>Merchandise</h2>
+                    </div>
+                    <div class = "wrapper-menu-grid">
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Cold Cups</p></a>
+                        </div>
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Tumblers</p></a>
+                        </div>
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Mugs</p></a>
+                        </div>
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Waterbottles</p></a>
+                        </div>
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Other</p></a>
+                        </div>
+                    </div>
+
+                    <div class = "container-menu-section-header">
+                        <h2>Gift Cards</h2>
+                    </div>
+                    <div class = "wrapper-menu-grid">
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Happy Birthday</p></a>
+                        </div>
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Thank You</p></a>
+                        </div>
+                        <div class = "container-menu-section-content">
+                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
+                            <a href="#"><p>Traditional</p></a>
+                        </div>
+                    </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class = container-footer-menu>
+                <div class = "container-footer-dropdown" onclick="toggleDropdown(this)">
+                    <div class = "wrapper-footer-dropdown-text">
+                        <h2>About Us</h2>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class = "wrapper-footer-dropdown-items hidden-dropdown">
+                        <ul>
+                            <a href=""><li>Our Company</li></a>
+                            <a href=""><li>Our Coffee</li></a>
+                            <a href=""><li>Stories and News</li></a>
+                            <a href=""><li>Starbucks Archive</li></a>
+                            <a href=""><li>Investor Relations</li></a>
+                            <a href=""><li>Customer Service</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "container-footer-dropdown" onclick="toggleDropdown(this)">
+                    <div class = "wrapper-footer-dropdown-text">
+                        <h2>Careers</h2>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class = "wrapper-footer-dropdown-items hidden-dropdown">
+                        <ul>
+                            <a href=""><li>Culture and Values</li></a>
+                            <a href=""><li>Inclusion, Diversity, and Equity</li></a>
+                            <a href=""><li>College Achievement Plan</li></a>
+                            <a href=""><li>Alumni Community</li></a>
+                            <a href=""><li>U.S. Careers</li></a>
+                            <a href=""><li>International Careers</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "container-footer-dropdown" onclick="toggleDropdown(this)">
+                    <div class = "wrapper-footer-dropdown-text">
+                        <h2>Social Impact</h2>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class = "wrapper-footer-dropdown-items-small hidden-dropdown">
+                        <ul>
+                            <a href=""><li>People</li></a>
+                            <a href=""><li>Planet</li></a>
+                            <a href=""><li>Environmental and Social Impact Reporting</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "container-footer-dropdown" onclick="toggleDropdown(this)">
+                    <div class = "wrapper-footer-dropdown-text">
+                        <h2>For Business Partners</h2>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class = "wrapper-footer-dropdown-items-small hidden-dropdown">
+                        <ul>
+                            <a href=""><li>Landlord Support Center</li></a>
+                            <a href=""><li>Suppliers</li></a>
+                            <a href=""><li>Corporate Gift Card Sales</li></a>
+                            <a href=""><li>Office and Foodservice Coffee</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "container-footer-dropdown" onclick="toggleDropdown(this)">
+                    <div class = "wrapper-footer-dropdown-text">
+                        <h2>Order and Pickup</h2>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class = "wrapper-footer-dropdown-items hidden-dropdown">
+                        <ul>
+                            <a href=""><li>Order on the App</li></a>
+                            <a href=""><li>Order on the Web</li></a>
+                            <a href=""><li>Delivery</li></a>
+                            <a href=""><li>Order and Pickup Options</li></a>
+                            <a href=""><li>Explore and Find Coffee for Home</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class = "container-sm">
+                <a href="https://open.spotify.com/user/starbucks"><i class="fa-brands fa-spotify"></i></a>
+                <a href="https://www.facebook.com/Starbucks/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.pinterest.com/starbucks/"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="https://www.instagram.com/starbucks/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.youtube.com/starbucks"><i class="fa-brands fa-square-youtube"></i></a>
+                <a href="https://twitter.com/starbucks/"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+            <div class = "container-legal">
+                    <a href = "#"><li>Privacy Notice</li></a>
+                    <a href = "#"><li>Terms of Use</li></a>
+                    <a href = "#"><li>Do Not Share My Personal Information</li></a>
+                    <a href = "#"><li>CA Supply Chain Act</li></a>
+                    <a href = "#"><li>Cookie Preferences</li></a>
+            </div>
+            <div class = "container-personal-disclaimer">
+                <p>DISCLAIMER: This website is in no way affiliated with Starbucks</p>
+                <p>This is purely a demonstration of skill and does not reflect the origin company in any way</p>
+            </div>
+        </footer>
+
+        <script defer src="./js/sideNav.js"></script>
+        <script defer src="./js/footerDropdown.js"></script>
+        <script onload>
+            alert("Menu Page modeled after Starbucks website design: 2/10 - present")
+        </script>
+    </body>
+</html>
