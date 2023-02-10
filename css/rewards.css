@@ -1,5 +1,10 @@
 /*General reward styling*/
 
+/*Underline Reward Header Nav*/
+#rewardHeader {
+    padding-bottom: 30px;
+    border-bottom: 4px solid var(--green);
+}
 
 
 /*Banner*/
@@ -153,6 +158,8 @@
     font-weight: 700;
     padding-top: 2rem;
     background-color: var(--antiqueWhite);
+    justify-content: center;
+    align-items: center;
 }
 
 .container-reward-display-menu h2 {
@@ -188,79 +195,30 @@
 .container-reward-display {
     background-color: var(--lightGreen);
     text-align: center;
-    padding: 3rem 0;
-    height: 70vh;
-    position: relative;
-}
-
-.container-reward-display div {
-    opacity: 0;
-    transition: all .5s;
+    padding: 3rem 1.5rem;
     height: fit-content;
-    width: 100%;
 }
 
 .wrapper-reward-display {
-    display: grid !important;
-    grid-template-columns: 80vw;
-    grid-template-rows: auto auto;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 }
 
-.wrapper-reward-display div {
-    height: auto;
-    width: auto;
-}
-
-
-
-.wrapper-reward-display-text {
-    padding-top: 2rem;
+.wrapper-reward-display div img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .wrapper-reward-display-text h3 {
-    font-size: 1.2rem;
     font-weight: 600;
+    font-size: 1.3rem;
 }
 
 .wrapper-reward-display-text p {
     font-weight: 500;
     font-size: 1rem;
 }
-
-.active-display, .active-display div {
-    
-    opacity: 1 !important;
-}
-
-#display1 {
-    z-index: 50;
-    position: absolute;
-}
-
-#display2 {
-    z-index: 60;
-    position: absolute;
-}
-
-#display3 {
-    z-index: 70;
-    position: absolute;
-}
-
-#display4 {
-    z-index: 80;
-    position: absolute;
-}
-
-#display5 {
-    z-index: 90;
-    position: absolute;
-}
-
-
-
 
 
 
@@ -626,49 +584,20 @@ button[type=submit]:hover {
 
 
 
-
-
-
-
-
-
-
-    /*Reward displays*/
+    /*Display content*/
     .container-reward-display {
-        background-color: var(--lightGreen);
+        padding: 2rem 1.5rem;
         text-align: left;
-        padding: 3rem 1rem;
-        height: 30vh;
-        position: relative;
     }
     
-    .container-reward-display div {
-        opacity: 0;
-        transition: all .5s;
-        display: flex;
-    }
-
-    .wrapper-reward-display-text {
-        display: block !important;
-        padding-top: 2rem;
-    }
-    
-    .wrapper-reward-display-text h3 {
-        font-size: 1.2rem;
-        font-weight: 600;
-    }
-    
-    .wrapper-reward-display-text p {
-        font-weight: 500;
-        font-size: .9rem;
-    }
-
     .wrapper-reward-display {
-        width: 90vw;
-        height: 30vh;
-        display: grid !important;
-        grid-template-columns: auto auto;
+        display: grid;
+        width: fit-content;
+        grid-template-columns: 35vw 35vw;
+        align-items: center;
+        margin: auto;
     }
+
 
 
 
