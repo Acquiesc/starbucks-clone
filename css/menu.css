@@ -40,7 +40,35 @@ main {
 }
 
 
+/*bottom banner - choose a store*/
+.container-menu-choose-store {
+    width: 100%;
+    background-color: var(--darkGreen);
+    z-index: 500;
+    position: fixed;
+    bottom: 0;
+    padding: 1rem 0;
+}
 
+.wrapper-menu-choose-store {
+    width: 20vw;
+    margin: auto;
+    border-bottom: 1px solid white;
+    line-height: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+.wrapper-menu-choose-store a:first-child {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(199, 194, 194);
+}
+
+.wrapper-menu-choose-store a:last-child {
+    font-size: 1rem;
+    color: white;
+    font-weight: 800;
+}
 
 
 /*Left nav menu - desktop 1024*/

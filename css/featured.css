@@ -1,0 +1,136 @@
+/*Featured page Header*/
+.container-featured-header {
+    width: 100%;
+    padding: 1.5rem 0 4rem 0;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+/*Top & Bottom Banner containers*/
+.container-banner {
+    height: fit-content;
+    background-color: var(--blueGreen);
+    color: white;
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.wrapper-content-desc, .wrapper-featured-item-desc {
+    width: 90%;
+    margin: auto;
+    padding: 1rem 2rem 0 2rem;
+}
+
+.wrapper-content-desc h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.wrapper-content-desc p {
+    font-weight: 600;
+}
+
+.wrapper-content-desc a {
+    border-color: white;
+}
+
+
+
+/*Middle Grid containers*/
+.container-featured-item {
+    height: fit-content;
+    background-color: var(--peach);
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.green-bkgrd {
+    background-color: var(--green) !important;
+    color: white;
+}
+
+.green-bkgrd .container-featured-item-desc a {
+    border-color: white;
+}
+
+.wrapper-featured-item-desc h2 {
+    font-weight: 600;
+}
+
+.wrapper-featured-item-desc p {
+    font-size: 1rem;
+}
+
+
+@media (min-width: 768px) {
+    /*Top & bottom banners*/
+    .container-banner {
+        display: flex;
+        padding-top: 2rem;
+    }
+
+    #bannerRight {
+        flex-direction: row-reverse;
+    }
+
+    .container-banner {
+        padding: 0;
+        max-height: 75vh;
+    }
+
+    .container-image {
+        width: 50%;
+    }
+
+    .container-image img {
+        width: 100%;
+        float: right;
+    }
+
+    .container-content-desc {
+        height: fit-content;
+    }
+
+    /*Center grid*/
+    .container-featured-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .container-featured-item {
+        height: 100%;
+    }
+
+    .wrapper-featured-item-desc {
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        margin: auto;
+    }
+
+    .wrapper-featured-item-desc p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    /*Featured page Header*/
+    .container-featured-header {
+        font-size: 4rem;
+    }
+}
+
+
+
+/*MAX WIDTH FOR 1438px + resolutions*/
+.container-banner, .container-featured-grid {
+    max-width: 1438px;
+    margin-left: auto;
+    margin-right: auto;
+}

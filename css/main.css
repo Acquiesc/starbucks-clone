@@ -4,6 +4,8 @@
     --lightGreen: #d4e9e2;
     --darkGreen: #1e3932;
     --green: #00754a;
+    --blueGreen: #3d7170;
+    --peach: #f4c5a1;
     --maroon: #8b323e;
     --white: #ffffff;
     --black: #000000;
@@ -90,6 +92,7 @@ img {
     width: 38px;
     height: 38px;
     margin-left: 1.6rem;
+    margin-right: 1rem;
 }
 
 .side-menu-btn {

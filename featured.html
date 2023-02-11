@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/menu.css">
+        <link rel="stylesheet" href="./css/featured.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Starbucks Coffee Company</title>
     </head>
@@ -81,194 +81,125 @@
             </div>
         </nav>
         
-        <main>
+        <main class = "container-featured" style="border: none !important">
 
-            <nav class = "container-menu-sub-nav">
-                <ul>
-                    <a href="menu.html" class="active-menu-nav"><li>All products</li></a>
-                    <a href="featured.html" class=""><li>Featured</li></a>
-                    <a href="" class=""><li>Previous Orders</li></a>
-                    <a href="" class=""><li>Favorite Products</li></a>
-                </ul>
-            </nav>
+            <div class = "container-featured-header">
+                <h1>Reset. Start fresh.</h1>
+            </div>
 
+            <div class = "container-banner" id="bannerRight">
+                <div class = "container-image">
+                    <img src = "./images/featured/featured1.webp">
+                </div>
+                <div class = "container-content-desc">
+                    <div class = "wrapper-content-desc">
+                        <h2>Pistachio Cream Cold Brew</h2>
+                        </br>
+                        <p>Smooth cold brew topped with pistachio cream cold foam 
+                            and salted brown-buttery sprinkles.
+                        </p>
+                        </br>
+                        <a class = "stndrdBtn">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "container-featured-grid">
+                <div class = "container-featured-item">
+                    <div class = "container-featured-item-img">
+                        <img src = "./images/featured/featured2.webp">
+                    </div>
+                    <div class = "container-featured-item-desc">
+                        <div class = "wrapper-featured-item-desc">
+                            <h2>Pistachio Latte</h2>
+                            </br>
+                            <p>Our signature espresso meets 
+                                cozy pistachio flavors and steamed milk.
+                            </p>
+                            </br>
+                            <a class = "stndrdBtn">Order now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "container-featured-item">
+                    <div class = "container-featured-item-img">
+                        <img src = "./images/featured/featured3.webp">
+                    </div>
+                    <div class = "container-featured-item-desc">
+                        <div class = "wrapper-featured-item-desc">
+                            <h2>Pistachio Frappuccino® blended beverage</h2>
+                        </br>
+                        <p>The comforting taste of pistachio blended with coffee, 
+                            milk and ice, then topped with whipped cream
+                        </p>
+                        </br>
+                        <a class = "stndrdBtn">Order now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "container-featured-item green-bkgrd">
+                    <div class = "container-featured-item-img">
+                        <img src = "./images/featured/featured4.jpg">
+                    </div>
+                    <div class = "container-featured-item-desc">
+                        <div class = "wrapper-featured-item-desc">
+                            <h2>Impossible™ Breakfast Sandwich</h2>
+                        </br>
+                        <p>A combination of savory ingredients including aged 
+                            Cheddar cheese and an Impossible Sausage Patty Made 
+                            From Plants.*
+                        </p>
+                        </br>
+                        <a class = "stndrdBtn">Order now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "container-featured-item green-bkgrd">
+                    <div class = "container-featured-item-img">
+                        <img src = "./images/featured/featured5.jpg">
+                    </div>
+                    <div class = "container-featured-item-desc">
+                        <div class = "wrapper-featured-item-desc">
+                            <h2>Bacon, Sausage & Egg Wrap</h2>
+                        </br>
+                        <p>With cage-free scrambled eggs and potatoes 
+                            wrapped in a flour tortilla.
+                        </p>
+                        </br>
+                        <a class = "stndrdBtn">Order now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "container-banner">
+                <div class = "container-image">
+                    <img src = "./images/featured/featured6.webp">
+                </div>
+                <div class = "container-content-desc">
+                    <div class = "wrapper-content-desc">
+                        <h2>Starbucks Tribute Blend®</h2>
+                        </br>
+                        <p>Featuring beans from 
+                            four origins: herbal Sumatra, chocolaty Colombia, 
+                            spicy Papua New Guinea and fruit-forward Ethiopia.
+                        </p>
+                        </br>
+                        <a class = "stndrdBtn">Order now</a>
+                    </div>
+                </div>
+            </div>
             
-
-            <div class = "container-menu">
-                <nav class = "container-all-products-nav">
-                    <h2>Drinks</h2>
-                    <ul id = "leftNavItems">
-                        <li><a href="">Hot Coffees</a></li>
-                        <li><a href="">Hot Teas</a></li>
-                        <li><a href="">Hot Drinks</a></li>
-                        <li><a href="">Frappuccino Blended Beverages</a></li>
-                        <li><a href="">Cold Coffees</a></li>
-                        <li><a href="">Iced Teas</a></li>
-                        <li><a href="">Cold Drinks</a></li>
-                    </ul>
-
-                    <h2>Food</h2>
-                    <ul>
-                        <li><a href="">Hot Breakfast</a></li>
-                        <li><a href="">Bakery</a></li>
-                        <li><a href="">Lunch</a></li>
-                        <li><a href="">Snacks & Sweets</a></li>
-                        <li><a href="">Oatmeal & Yogurt</a></li>
-                    </ul>
-
-                    <h2>At Home Coffee</h2>
-                    <ul>
-                        <li><a href="">Whole Bean</a></li>
-                        <li><a href="">VIA Instant</a></li>
-                    </ul>
-
-                    <h2>Merchandise</h2>
-                    <ul>
-                        <li><a href="">Cold Cups</a></li>
-                        <li><a href="">Tumblers</a></li>
-                        <li><a href="">Mugs</a></li>
-                        <li><a href="">Water Bottles</a></li>
-                        <li><a href="">Other</a></li>
-                    </ul>
-
-                    <h2>Gift Cards</h2>
-                    <ul>
-                        <li><a href="">Happy Birthday</a></li>
-                        <li><a href="">Thank You</a></li>
-                        <li><a href="">Traditional</a></li>
-                    </ul>
-                </nav>
-    
-                <section class = "container-menu-display">
-                    <div class = "container-menu-header">
-                        <h1>Menu</h1>
-                    </div>
-                    <div class = "container-menu-section-header">
-                        <h2>Drinks</h2>
-                    </div>
-                    <div class = "wrapper-menu-grid">
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Hot Coffees</p></a>
-                        </div>
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Hot Teas</p></a>
-                        </div>
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Hot Drinks</p></a>
-                        </div>
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Frappuccino Blended Beverages</p></a>
-                        </div>
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Cold Coffees</p></a>
-                        </div>
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Iced teas</p></a>
-                        </div>
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Cold Drinks</p></a>
-                        </div>
-                    </div>
-                        
-                    <div class = "container-menu-section-header">
-                        <h2>Food</h2>
-                    </div>
-                    <div class = "wrapper-menu-grid">
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Hot Breakfast</p></a>
-                        </div>
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Bakery</p></a>
-                        </div>
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Lunch</p></a>
-                        </div>
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Snacks & Sweets</p></a>
-                        </div>
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Oatmeal & Yogurt</p></a>
-                        </div>
-                    </div>
-
-                    <div class = "container-menu-section-header">
-                        <h2>At Home Coffee</h2>
-                    </div>
-                    <div class = "wrapper-menu-grid">
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Whole Bean</p></a>
-                        </div>
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>VIA Instant</p></a>
-                        </div>
-                    </div>
-
-                    <div class = "container-menu-section-header">
-                        <h2>Merchandise</h2>
-                    </div>
-                    <div class = "wrapper-menu-grid">
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Cold Cups</p></a>
-                        </div>
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Tumblers</p></a>
-                        </div>
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Mugs</p></a>
-                        </div>
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Waterbottles</p></a>
-                        </div>
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Other</p></a>
-                        </div>
-                    </div>
-
-                    <div class = "container-menu-section-header">
-                        <h2>Gift Cards</h2>
-                    </div>
-                    <div class = "wrapper-menu-grid">
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Happy Birthday</p></a>
-                        </div>
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Thank You</p></a>
-                        </div>
-                        <div class = "container-menu-section-content">
-                            <a href="#"><img src="./images/menu/coffee.jpg"></a>
-                            <a href="#"><p>Traditional</p></a>
-                        </div>
-                    </div>
-            </section>
         </main>
 
-        <div class = "container-menu-choose-store">
-            <div class = "wrapper-menu-choose-store">
-                <a href="">For item availability</a></br>
-                <a href="">Choose a store</a>
+        <section class = "container-disclaimer" >
+            <div>
+                <p>*Impossible is a trademark of Impossible Foods Inc. under license.</p>
             </div>
-        </div>
+        </section>
 
         <footer>
             <div class = container-footer-menu>
@@ -371,7 +302,7 @@
         <script defer src="./js/sideNav.js"></script>
         <script defer src="./js/footerDropdown.js"></script>
         <script onload>
-            alert("Menu Page modeled after Starbucks website design: 2/10 - 2/10");
+            alert("Menu Page modeled after Starbucks website design: 2/11 - present")
         </script>
     </body>
 </html>
