@@ -358,8 +358,10 @@ img {
 
 
 
-
-
+/*icons and info for only mobile display*/
+.hide-on-desktop {
+    display: flex;
+}
 
 
 
@@ -386,6 +388,10 @@ img {
 }
 
 @media (min-width: 1022px) {
+    .hide-on-desktop {
+        display: none;
+    }
+
     .container-legal {
         display: grid;
         padding-left: 0;
