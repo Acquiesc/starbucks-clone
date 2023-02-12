@@ -1,12 +1,12 @@
-const banner = document.querySelector(".container-banner");
+const currentBanner = document.querySelector(".container-banner");
 
 function holdBanner(lastKnownScrollPosition) {
     if(lastKnownScrollPosition > 83) {
-        banner.style.top = '0';
-        banner.style.position = 'fixed';
+        currentBanner.style.top = '0';
+        currentBanner.style.position = 'fixed';
     } else {
-        banner.style.position = 'absolute';
-        banner.style.top = '83px';
+        currentBanner.style.position = 'absolute';
+        currentBanner.style.top = '83px';
     }
 }
 

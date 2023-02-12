@@ -358,9 +358,13 @@ img {
 
 
 
-/*icons and info for only mobile display*/
-.hide-on-desktop {
-    display: flex;
+/*icons and info for only specific display*/
+.show-on-mobile {
+    display: block;
+}
+
+.show-on-tablet, .show-on-desktop {
+    display: none;
 }
 
 
@@ -370,6 +374,14 @@ img {
     .sbLogo {
         width: 49px;
         height: 49px;
+    }
+
+    .show-on-mobile, .show-on-desktop {
+        display: none;
+    }
+
+    .show-on-tablet {
+        display: block;
     }
 }
 
@@ -388,7 +400,11 @@ img {
 }
 
 @media (min-width: 1022px) {
-    .hide-on-desktop {
+    .show-on-desktop {
+        display: block;
+    }
+    
+    .show-on-mobile,.show-on-tablet {
         display: none;
     }
 

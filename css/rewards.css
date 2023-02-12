@@ -47,15 +47,18 @@
 .container-join-rewards h2 {
     color: var(--darkGreen);
     font-size: 1.2rem;
-    line-height: 1.75;
+    line-height: 1.5;
     font-weight: 700;
 }
 
-.container-join-rewards p {
+.container-join-rewards p, .container-join-rewards p a {
     color: var(--darkGreen);
     font-size: 1.1rem;
-    line-height: 1.75;
     padding: 1rem 0;
+}
+
+.container-join-rewards p a:hover {
+    text-decoration: none;
 }
 
 .container-join-rewards div {
@@ -486,7 +489,7 @@ button[type=submit]:hover {
     /*Join rewards*/
     .container-join-rewards {
         text-align: left;
-        padding: 5rem 2rem 3rem 2rem;
+        padding: 8rem 2rem 4rem 2rem;
     }
 
     .container-join-rewards h2 {
@@ -697,6 +700,13 @@ button[type=submit]:hover {
 
     
 
+}
+
+@media (min-width: 1022px) {
+     /*Join rewards*/
+     .container-join-rewards {
+        padding: 15rem 2rem 8rem 2rem;
+    }
 }
 
 
